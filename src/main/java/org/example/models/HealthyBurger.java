@@ -14,11 +14,13 @@ public class HealthyBurger extends Hamburger{
     public void addHealthyAddition1(String name, double price) {
         this.healthyExtra1Name = name;
         this.healthyExtra1Price = price;
+        setPrice(getPrice() + price);
     }
 
     public void addHealthyAddition2(String name, double price) {
         this.healthyExtra2Name = name;
         this.healthyExtra2Price = price;
+        setPrice(getPrice() + price);
     }
 
     @Override
